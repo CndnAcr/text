@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_4-of-12">
+            <lightning-combobox label="Customer Type" options={customerOptions} onchange={cusTypeChange}
+                placeholder="--None--" required="true" class="clsFrmFetchSchm">
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-size_4-of-12">
+            <lightning-combobox label="Deposit Type" options={depTypeOptions} onchange={depTypeChange}
+                placeholder="--None--" required="true" class="clsFrmFetchSchm">
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_4-of-12">
+            <lightning-combobox label="Payout Frequency" options={payFreqOptions} onchange={payFreqChange}
+                placeholder="--None--" required="true" class="clsFrmFetchSchm">
+            </lightning-combobox>
+        </div>
+    </div>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_4-of-12">
+            <lightning-combobox label="Tenor In Months" options={tenorMonthsOptions} onchange={tenorMonthsChange}
+                placeholder="--None--" required="true" class="clsFrmFetchSchm">
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-size_4-of-12">
+            <lightning-combobox label="Tenor In Days" options={tenorDaysOptions} onchange={tenorDaysChange}
+                placeholder="--None--" required="true" class="clsFrmFetchSchm">
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_4-of-12">
+            <lightning-input type="number" label="FD Amount" required="true" onchange={onFDAmtChange}
+                class="clsFrmFetchSchm">
+            </lightning-input>
+        </div>
+    </div>
+    <div class="slds-col slds-size_12-of-12 slds-p-around_x-small slds-align_absolute-center">
+        <lightning-button variant="brand" label="Fetch Scheme"  title="Fetch Scheme" onclick={fetchScheme} ></lightning-button>
+    </div>
+</template>

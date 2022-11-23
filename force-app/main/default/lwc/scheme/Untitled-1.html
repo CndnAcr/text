@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_4-of-12">
+            <lightning-combobox label="Customer Type" options={customerOptions} onchange={cusTypeChange}
+                placeholder="--None--" required="true" class="clsFrmFetchSchm">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_4-of-12">
+            <lightning-combobox label="Deposit Type" options={depTypeOptions} onchange={depTypeChange}
+                placeholder="--None--" required="true" class="clsFrmFetchSchm">
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_4-of-12">
+            <span>3</span>
+        </div>
+    </div>
+
+</template>
